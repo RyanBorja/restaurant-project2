@@ -11,9 +11,9 @@ var menuItem6 = document.getElementById('menuItem6');
 var menuItem7 = document.getElementById('menuItem7');
 var menuItem8 = document.getElementById('menuItem8');
 
-// Error variables
-var error = document.getElementById("error");
-var errorMessage = document.getElementById('errorMessage');
+//// Error variables
+//var error = document.getElementById("error");
+//var errorMessage = document.getElementById('errorMessage');
 
 // Other
 var apiRequest;
@@ -35,15 +35,15 @@ function getMenu() {
 	// Code that fetches data from the API URL and stores it in results.
 	apiRequest = new XMLHttpRequest();
 	apiRequest.onload = catchResponse;
-	apiRequest.onerror = httpRequestOnError;
+//	apiRequest.onerror = httpRequestOnError;
 	apiRequest.open('get', url, true);
 	apiRequest.send();
     
 }
 
-function httpRequestOnError() {
-	errorMessage.innerHTML = 'Something went wrong. Try again later.'
-}
+//function httpRequestOnError() {
+//	errorMessage.innerHTML = 'Something went wrong. Try again later.'
+//}
 
 function catchResponse() {
 //if (apiRequest.statusText === "OK") {
