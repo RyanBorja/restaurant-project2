@@ -31,7 +31,7 @@ document.onreadystatechange = function() {
 function getMenu() {
 
 	// Set up url for fetching menu data.
-	var url = "http://entree-s18.herokuapp.com/v1/menu";
+	var url = "https://entree-s18.herokuapp.com/v1/menu";
 	
 
 	// Code that fetches data from the API URL and stores it in results.
