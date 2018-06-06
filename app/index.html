@@ -13,7 +13,7 @@
 
 <div class="bgimg w3-display-container w3-text-black">
   <div class="w3-display-middle w3-jumbo">
-    <p class="w3-tag w3-padding w3-margin-top">Crickets</p>
+    <p id="easteregg" class="w3-tag w3-padding w3-margin-top">Crickets</p>
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p id="menuButton"><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
@@ -88,6 +88,14 @@ $(document).ready(function(){
     <div class="w3-container w3-black w3-display-container">
       <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
       <h1>Entrees</h1>
+        <select class="w3-select" name="option">
+          <option value="" disabled selected>Choose day of week</option>
+          <option value="1">Wednesday</option>
+          <option value="2">Thursday</option>
+          <option value="3">Friday</option>
+          <option value="4">Saturday</option>
+          <option value="5">Sunday</option>
+        </select> 
     </div>
     <div class="w3-container">
       <ol>

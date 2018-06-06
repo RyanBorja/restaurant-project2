@@ -17,12 +17,14 @@ var menuItem8 = document.getElementById('menuItem8');
 
 // Other
 var apiRequest;
+var easteregg = document.getElementById('easteregg');
 
 // Waits for page to load before firing
 document.onreadystatechange = function() {
 	if (document.readyState == "interactive") {
 		// Initialize your application or run some code.
 		menu.onclick = getMenu;
+        setInterval(eastereggz, 10000);
 	}
 };
 
@@ -60,4 +62,10 @@ function catchResponse() {
 //	else {
 //		errorMessage.innerHTML = apiRequest.statusText;
 //}
+}
+
+function eastereggz() {
+    easteregg.classList.add('w3-spin');
+    easteregg.classList.add('w3-red');
+    easteregg.innerHTML= "oh no, im gonna hurl!";
 }
