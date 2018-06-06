@@ -64,8 +64,37 @@ function catchResponse() {
 //}
 }
 
+// for fun
 function eastereggz() {
     easteregg.classList.add('w3-spin');
     easteregg.classList.add('w3-red');
     easteregg.innerHTML= "oh no, im gonna hurl!";
 }
+
+
+//// create the menu for each day of the week
+//function munltipleMenus() {
+//    var menuList = { "Wednesday" : "apiRequest.responseText.menu_items"};
+//    getMenu;
+//    menuList["Thursday"] = "apiRequest.responseText.menu_items";
+//    getMenu;
+//    menuList["Friday"] = "apiRequest.responseText.menu_items";
+//    getMenu
+//    menuList["Saturday"] = "apiRequest.responseText.menu_items";
+//    getMenu;
+//    menuList["Sunday"] = "apiRequest.responseText.menu_items";
+//    
+//}
+//
+//// local storage
+//function storeMenu() {
+//    var menuForWeek = JSON.parse(localStorage.getItem('menuForWeek'));
+//	if (menuForWeek == null) {
+//		menuForWeek = {}};
+//	}
+//
+//	menuForWeek = {} ;
+//
+//localStorage.setItem('list', JSON.stringify(list));
+//}
+//
